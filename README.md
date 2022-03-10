@@ -1,6 +1,9 @@
 # Personal Portfolio
 
-joannsaeou.github.io
+https://joannsaeou.github.io/
+
+
+(still updating, meaning not finish yet but stay tune!)
 
 
 # web-335 and web-420
