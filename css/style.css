@@ -1,9 +1,10 @@
 /* /* 
 ============================================
 ; Title: style.css
-; Author: Professor Krasso
-; Date: 03 May 2020
+; Author: Joann Saeou
+; Date: 03 May 2020 
 ; Modified By: Joann Saeou
+; Modified Date: 11 April 2022
 ; Description: stylesheet for personal portfolio
 ;===========================================
 */
@@ -15,6 +16,31 @@
   box-sizing: border-box;
 }
 
+
+
+
+
+/******************************************
+/* CLEAR/CLEARFIX HACKS
+/*******************************************/
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+  }
+  .clearfix { display: inline-block; }
+  * html .clearfix { height: 1%; }
+  .clearfix { display: block; }
+
+
+
+
+
+
 /******************************************
 /* BASE STYLE
 /*******************************************/
@@ -25,7 +51,6 @@
 
 span {
   background: white;
-  border: 1px solid black;
 }
 body {
  
@@ -108,19 +133,17 @@ clear: both;
 }
 
 
-div.intro {
-display: flex;
-height: 300px;
-  margin: 0;
+main.intro {
+justify-content: center;
+align-items: center;
+height: 900px;
+  margin: 0 500px ;
+  
 }
 
-div.intro > p {
-  height: 235px;
-   width: 500px;
-  background: rgba(255,84,104,0.3);
-  border: 2px solid rgb(255,84,104);
-  padding: 10px;
-  margin: 10px;
+main.intro > p {
+
+
 }
 
 
@@ -150,20 +173,27 @@ div.desc {
 /* SECTIONS 
 /*******************************************/
 
-
-section.moveRight {
-
-  margin-right: 10px;
-  height: 300px;
-  width: 500px;
-  float: right;
-  border: 7px solid red;
-  border-radius: 50%;
-  }
+.intro-center > h6 {
+margin-bottom: 50px;
+text-decoration: skyblue underline;
+}
 
 
-  section.moveRight > img {
-    border-radius: 70%;
+.intro-center > h6 + h1 {
+  color: skyblue;
+  font-family: 'Shadows Into Light', cursive;
+
+}
+
+.intro-center > p span {
+color: skyblue;
+font-size: 20px;
+text-decoration: none;
+}
+
+  section.intro-center > img {
+    border-radius: 10%;
+    margin: 20px 0;
   }
   
 
